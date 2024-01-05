@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Forms</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="color-blob"></div>
+      <div class="color-blob"></div>
+      <section class="form-container">
+        <div class="form">
+          <h2>Signup</h2>
+          <form>
+            <fieldset>
+              <legend>Account Info</legend>
+              <label for="username" class="visually-hidden">Username</label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Fullname..."
+                required
+                pattern="[a-zA-Z0-9]+"
+                title="Username can only contain alpha-numeric characters"
+                aria-label="Username containing only alpha-numeric characters"
+              />
+            </label>
+              <input
+                type="text"
+                name="username"
+                id="username"
+                placeholder="Email Address..."
+                required
+                pattern="[a-zA-Z0-9]+"
+                title="Username can only contain alpha-numeric characters"
+                aria-label="Username containing only alpha-numeric characters"
+              />
+              <label for="password" class="visually-hidden">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password..."
+                required
+              />
+              <p> Minimum 12 Characters.</p>
+              <p>Must include uppercase, lowercase, number and symbol.</p> 
+            </fieldset>
+            <fieldset>
+              <legend>Dev Skills</legend>
+              <label class="standalone">Core Languages</label>
+              <input type="checkbox" name="html" id="html" value="html" />
+              <label for="html">HTML</label>
+              <input type="checkbox" name="css" id="css" value="css" />
+              <label for="css">CSS</label>
+              <input type="checkbox" name="js" id="js" value="js" />
+              <label for="js">JavaScript</label>
+              <input type="checkbox" name="php" id="php" value="php" />
+              <label for="php">PHP</label>
+              <input type="checkbox" name="Csharp" id="Csharp" value="Csharp" />
+              <label for="php">C#</label>
+              <input type="checkbox" name="Kotlin" id="Kotlin" value="Kotlin" />
+              <label for="php">Kotlin</label>
+              <label class="standalone">Libraries/Frameworks</label>
+              <input
+                type="radio"
+                name="libraries"
+                id="react"
+                value="react"
+              />
+              <label for="react">React</label>
+              <input
+                type="radio"
+                name="libraries"
+                id="angular"
+                value="angular"
+              />
+              <label for="angular">Angular</label>
+              <input
+                type="radio"
+                name="libraries"
+                id="vue.js"
+                value="vue.js"
+              />
+              <label for="vue.js">Vue.js</label>
+
+              <label class="standalone">Dev Ops</label>
+              <input
+                type="radio"
+                name="libraries"
+                id="git"
+                value="git"
+              />
+              <label for="react">Git</label>
+              <input
+                type="radio"
+                name="libraries"
+                id="gulp"
+                value="gulp"
+              />
+              <label for="angular">Gulp</label>
+              <input
+                type="radio"
+                name="libraries"
+                id="docker"
+                value="docker"
+              />
+              <label for="vue.js">Docker</label>
+
+
+              <fieldset>
+                <legend>Experience</legend>
+              <input
+                type="radio"
+                name="experience"
+                id="beginner"
+                value="beginner"
+              />
+              <label for="beginner">Beginner</label>
+              <input
+                type="radio"
+                name="experience"
+                id="intermediate"
+                value="intermediate"
+              />
+              <label for="intermediate">Intermediate</label>
+              <input
+                type="radio"
+                name="experience"
+                id="advanced"
+                value="advanced"
+              />
+              <label for="advanced">Advanced</label>
+              </fieldset>
+              
+
+            </fieldset>
+            <fieldset>
+              <legend>Other</legend>
+              <label for="referredby">How did you hear about us?</label>
+              <select name="referredby" id="referredby">
+                <option value="">Please Select...</option>
+                <optgroup label="Person">
+                  <option value="friend">Friend</option>
+                  <option value="family">Family</option>
+                  <option value="colleague">Colleague</option>
+                </optgroup>
+                <optgroup label="Media">
+                  <option value="internet">Internet</option>
+                  <option value="radio">Radio</option>
+                  <option value="tv">TV</option>
+                  <option value="newspaper">Newspaper</option>
+                </optgroup>
+              </select>
+              <label for="comments">Comments</label>
+              <textarea
+                name="comments"
+                id="comments"
+                cols="40"
+                rows="6"
+              ></textarea>
+            </fieldset>
+            <input type="hidden" name="userid" value="jbsolo" />
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Clear Form" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer><p>&copy; 2024 Joshua Solomon</p></footer>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
